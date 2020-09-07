@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase01</title>
+    <script>
+    function reset(){
+        var user = document.getElementById("usuario");
+        var pass = document.getElementById("Password");
+        user.value="";
+        pass.value="";
+    }
+    function validar(){
+        var pass = document.getElementById("Password");
+        if(pass.value == "123"){
+            alert("el usuario se logueo correctamente");
+        }
+        else{
+            alert("contraseña incorrecta");
+        }
+    }
+    </script>
+</head>
+<body>
+    
+<!-- <table>
+    <thead>
+
+
+    </thead>
+    <tbody>
+
+    </tbody>
+</table> -->
+<fieldset>
+    <legend>Login</legend>
+    <label for="usuario">Usuario</label>  
+    <input type="text" id="usuario"> <br>
+    <label for="Password">Password</label> 
+    <input type="text" id="Password"> <br>
+    <br>
+     <input type="checkbox" id="recordar" checked>Recodrdar Contraseña
+    <br>
+    <input type="button" value="Enviar" onclick="validar()">
+    <input type="button" value="Limpiar" onclick="reset()">
+
+
+</fieldset>
+
+
+
+
+</body>
+
+</html>
