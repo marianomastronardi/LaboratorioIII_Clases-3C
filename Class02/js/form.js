@@ -42,6 +42,7 @@ function addItem(){
     tr.appendChild(tdl);
     bmt.appendChild(tr); */
     bmt.innerHTML = bmt.innerHTML + `<tr><td>${nom.value}</td><td>${ape.value}</td><td><a href="#">borrar</a></td></tr>`;
+    resetForm(nom, ape);
 }
 
 function openHideDiv(){
@@ -54,4 +55,9 @@ function cerrar(){
     div = document.getElementById('container');
 
     div.hidden = true;
+}
+
+function resetForm($nom, $ape){
+    $nom.value = '';
+    $ape.value = '';
 }

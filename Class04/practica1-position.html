@@ -1,0 +1,172 @@
+<!-- 
+Laboratorio III
+Practica CSS clase 4
+Matias Ramos
+•
+19:35
+1.	Realizar las modificaciones a los estilos de la pag. “paractica1- Position.html” para que se vea como las imágenes:
+a.	El botón + debe estar a la derecha sobre todos los componentes
+b.	El div debe aparecer con una animación y una sombra al hacer click sobre el botón +
+c.	El div debe estar en el centro de la pantalla
+d.	Los botones agregar y cancelar deben estar uno a la izquierda y otro a la derecha distanciados de los márgenes.
+
+paractica1- Position.html
+HTML
+Comentarios de la clase
+
+
+Tu trabajo
+Tarea asignada
+Comentarios privados
+
+Practica CSS clase 4
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .contenedor{
+        background-color: rgb(190, 181, 170);
+        width: 50%;
+        border-radius: 5px;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 25%;
+        top: 50%;
+    }
+    .conbtn{
+        display: flex;
+         flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+    }
+      input[type=button] {  
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        width: 25%;
+      }
+      #btnOpen{
+        border-radius: 50%;
+        padding: 3px;
+        width:3rem;
+        height: 3rem;
+      }
+      #btnC{
+          background-color:rgb(180, 41, 41);
+      }
+      table{
+      width: 100%;
+      border-collapse: collapse;
+      }
+      th,td{
+          text-align:left ;
+          padding: 8px;
+      }
+      th{
+          background-color: rgb(65, 138, 65);
+          color:white;
+      }
+
+      tr:nth-child(even){
+          background-color: bisque;    
+      }
+      .rel{
+          position:relative
+      }
+      .abs{
+          position: absolute;
+          right: 10px;
+      }
+    
+    </style>
+    <script>
+        
+        function abrir(){
+          var formulario = document.getElementById("formulario");
+          formulario.hidden=false;
+          var btn = document.getElementById("btnOpen");
+          btn.hidden=true;
+        }
+        function cerrar(){
+          var formulario = document.getElementById("formulario");
+          formulario.hidden=true;
+          var btn = document.getElementById("btnOpen");
+          btn.hidden=false;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="rel">
+        <div class="abs">
+        <input id="btnOpen" type="button" value="+" onclick="abrir()"/>
+    </div>
+</div>
+    
+
+  <div id="formulario" class="contenedor" hidden="true">
+    
+    <label for="fname">Nombre</label>
+    <br>
+    <input type="text" id="fname" class="sinError" name="firstname" placeholder="Tu nombre..">
+    <br>
+    <label for="lname">Apellido</label>
+    <br>
+    <input type="text" id="lname" class="sinError" name="lastname" placeholder="Tu apellido..">
+    <br>
+<div class="conbtn">
+
+    <input type="button" value="Guardar" onclick="agregar();">
+    <input id="btnC"  type="button" value="Cancelar" onclick="cerrar()">
+
+</div>
+    
+ 
+</div>
+
+<h2>Lista de personas</h2>
+<table id="tabla">
+  <thead>
+<tr>
+  <th>Nombre</th>
+  <th>Apellido</th>
+  <th>Accion</th>
+</tr>
+</thead>
+<tbody id="tCuerpo">
+<tr>
+  <td>Peter</td>
+  <td>Griffin</td>
+  <td><a href="">borrar</a></td>
+</tr>
+<tr>
+  <td>Lois</td>
+  <td>Griffin</td>
+  <td><a href="">borrar</a></td>
+</tr>
+<tr>
+  <td>Joe</td>
+  <td>Swanson</td>
+  <td><a href="">borrar</a></td>
+</tr>
+<tr>
+  <td>Cleveland</td>
+  <td>Brown</td>
+  <td><a href="">borrar</a></td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
+paractica1- Position.html
+Mostrando paractica1- Position.html.Entregando…
