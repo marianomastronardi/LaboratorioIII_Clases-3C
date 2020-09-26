@@ -1,0 +1,100 @@
+.contenedor{
+    background-color: #ccc;
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 10px, 10px, 10px, 0px rgb(218, 202, 202); 
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin:auto;
+    animation-name: abrir;
+    animation-duration: 4s;
+}
+
+input[type=text]{
+    width: 100%;
+    margin: 8px;
+    border-radius: 4px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.inputSinError{
+    border: solid 1px lightgray;
+}
+
+.inputConError{
+    border: solid 1px red;
+}
+
+tr:nth-child(even){
+    background-color: rgb(218, 202, 202); 
+}
+
+table{
+    width: 100%;
+    border: none;
+    border-color: transparent;
+    border-collapse: collapse;
+    margin: 5px;
+}
+
+thead{
+    background-color: darkcyan;
+    color: white;
+    font-size: 20px;
+}
+
+td, th{
+    padding: 5px 0px;
+    font-size: 20px;
+    text-align: left;
+}
+
+label{
+font-size: 20px;
+margin: 30px;
+}
+
+input[type=button]{
+    background-color: rgba(3, 105, 3, 0.726);
+    border: none;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 20px;  
+    margin-top: 10px;
+        cursor: pointer;
+        width: 50%;
+        box-shadow: 10px, 10px, 10px, 0px rgb(218, 202, 202); 
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.equis{
+    
+    position: absolute;
+    background-color: red;
+    color: white;
+    top:0px;
+    right: 0px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
+#end {
+    background-color: red;
+    text-align: center;
+    cursor: pointer;
+}
+
+@keyframes abrir{
+    from{
+        width: 0%;
+        opacity: 0;
+    }
+    to{
+        width: 50%;
+        opacity: 1;
+    }
+}

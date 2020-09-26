@@ -1,0 +1,28 @@
+body{
+    background-color: #ccc;
+}
+
+p {
+    color: red;
+    background-color: aqua;
+    font-size: 10px;
+
+}
+
+p.ital{
+    font-style: italic;
+}
+
+.success{
+    background-color: rgba(28, 196, 28, 0.726);
+border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.success:hover{
+    background-color: teal;
+}
