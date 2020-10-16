@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Parcial</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/functions.js"></script>
+</head>
+<body>
+    <div id="loading" hidden>
+        <img src="./img/loading.gif" alt="">
+    </div>
+   
+    <div class="container" >
+        <div class="contenedor" id="formPersona" >
+            <div class="equis" id="equis">X
+                <!-- <input type="button" id="end" class="btnend" value="X"> -->
+            </div>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingrese su Nombre" required><br>
+            <label for="apellido">Apellido</label><br>
+            <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Ingrese su Apellido"
+                required><br>
+                <label for="fecha">Fecha</label><br>
+            <input type="text" id="fecha" name="fecha" class="form-control" placeholder="Ingrese Fecha" required><br>
+            <label for="gender">Sexo</label><br>
+            <input type="radio" id="male" name="gender" value="Masculino">
+            <label for="male">Masculino</label><br>
+            <input type="radio" id="female" name="gender" value="Femenino">
+            <label for="female">Femenino</label><br>
+            <div id="botones">
+                <input type="button" id="btnDelete" value="Eliminar">
+                <input type="button" id="btnEdit" value="Modificar">
+            </div>
+        </div>
+        <table>
+            <thead>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Fecha</th>
+                <th>Sexo</th>
+            </thead>
+            <tbody id="bodymaintable"></tbody>
+        </table>
+    </div>
+</body>
+</html>

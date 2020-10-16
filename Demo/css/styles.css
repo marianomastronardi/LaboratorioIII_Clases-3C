@@ -1,0 +1,92 @@
+.contenedor{
+    background-color: rgb(190, 181, 170);
+    width: 50%;
+    border-radius: 5px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+ .container{
+    position: relative;
+} 
+.loading{
+    opacity: 0.7;
+}
+.equis{
+    
+    position: absolute;
+    background-color: red;
+    color: white;
+    top:0px;
+    right: 0px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
+table{
+    width: 100%;
+    border: none;
+    border-color: transparent;
+    border-collapse: collapse;
+    /* margin: 50px; */
+    margin-top: 200px;
+}
+
+thead{
+    background-color: darkcyan;
+    color: white;
+    font-size: 20px;
+}
+
+td, th{
+    padding: 5px 0px;
+    font-size: 20px;
+    text-align: left;
+}
+
+#id{
+    position: relative;
+    width: 50%;
+    left: 25%;
+}
+
+#botones{
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+input[type=text]{
+    width: 100%;
+    margin: 8px;
+    border-radius: 4px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+input[type=button]{
+    
+    border: none;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 20px;  
+    margin-top: 10px;
+        cursor: pointer;
+        width: 30%;
+        box-shadow: 10px, 10px, 10px, 0px rgb(218, 202, 202); 
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#btnEdit{
+    background-color: rgba(3, 105, 3, 0.726);
+}
+#btnDelete{
+    background-color: red;
+}
