@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/form.css">
+    <script src="./js/form.js"></script>
+</head>
+
+<body>
+    <input type="button" id="hiddendiv" value="Abrir">
+    <div class="contenedor" id="container" hidden>
+        <div class="equis" id="equis">X
+            <!-- <input type="button" id="end" class="btnend" value="X"> -->
+        </div>
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingrese su Nombre" required><br>
+        <label for="apellido">Apellido</label><br>
+        <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Ingrese su Apellido"
+            required><br>
+            <label for="fecha">Fecha</label><br>
+        <input type="text" id="fecha" name="fecha" class="form-control" placeholder="Ingrese Fecha" required><br>
+        <label for="telefono">Telefono</label><br>
+        <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Ingrese su Telefono"
+            required><br>
+        <input type="button" id="btnsubmit" value="Guardar">
+    </div>
+
+    <h2>Lista de Personas</h2>
+
+    <table id="maintable">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Fecha</th>
+                <th>Telefono</th>
+                <th colspan="2">Accion</th>
+            </tr>
+
+        </thead>
+        <tbody id="bodymaintable">
+            <!-- <tr>
+                <td id="tdnombre">Peter</td>
+                <td id="tdapellido">Graffin</td>
+                <td id="tdaccion"><a href="#">borrar</a></td>
+            </tr>
+            <tr class="gris">
+                <td id="tdnombre">Louis</td>
+                <td id="tdapellido">Graffin</td>
+                <td id="tdaccion"><a href="#">borrar</a></td>
+            </tr>
+            <tr>
+                <td id="tdnombre">Joe</td>
+                <td id="tdapellido">Swanson</td>
+                <td id="tdaccion"><a href="#">borrar</a></td>
+            </tr>
+            <tr class="gris">
+                <td id="tdnombre">Cleveland</td>
+                <td id="tdapellido">Brown</td>
+                <td id="tdaccion"><a href="#">borrar</a></td>
+            </tr> -->
+
+        </tbody>
+    </table>
+</body>
+
+</html>

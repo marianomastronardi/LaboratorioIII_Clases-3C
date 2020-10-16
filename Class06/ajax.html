@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var http = new XMLHttpRequest();
+    window.addEventListener('load', () => {
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click', () => {
+            Enviar();
+        })
+    })
+
+    function Enviar() {
+        let usr = $('usr');
+        let pass = $('pass');
+
+        http.onreadystatechange = respost;
+        http.open('POST', 'http://localhost:3000/loginUsuario', true);
+        http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        http.send(`usr=${usr}&pass=${pass}`);
+    }
+
+    function respost() {
+        if (http.readyState == 4) {
+            if (http.status === 200) {
+                let res = http.responseText;
+                alert(res);
+            } else {
+                alert('error');
+            }
+        }
+    }
+
+    function $(id) {
+        return document.getElementById(id).value;
+    }
+</script>
+
+<body>
+    <input type="text" id="usr"><br>
+    <input type="password" id="pass"><br>
+    <button id="btn" value="Enviar">Enviar</button>
+</body>
+
+</html>
