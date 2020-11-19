@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <!--    <script>
+        //Map
+        var nums = [1, 2, 3, 4, 5, 6];
+        /*var numSqrt = [];
+        
+         for (let index = 0; index < nums.length; index++) {
+            const element = array[index];
+            numSqrt[index] = nums[index]*nums[index]
+        }
+        console.log(numSqrt); */
+
+        var numSqrt = nums.map((num) => {
+            return num * num;
+        })
+
+        //console.log(numSqrt)
+
+        //Filter devuelve una copia del array original y los filtra
+        var numFiltered = nums.filter((num) => {
+            return num > 3;
+        })
+
+        //console.log(numFiltered)
+
+        //Reduce: quita un valor del array origina. devuelve UN SOLO valor
+        var sum = nums.reduce((total, num) => {return total = total + num}, 0); //0 es el valor inicial del parametro "total"
+
+        //console.log(sum)
+
+        //foreach
+        /* var numfor = nums.forEach((num) => {
+            console.log(num)
+        }) */
+
+    </script> -->
+    <script src='./datos.js'></script>
+</head>
+
+<body>
+
+</body>
+
+</html>
